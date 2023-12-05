@@ -24,7 +24,7 @@ for card in string.gmatch(input,"Card%C+") do
   
   local match_counter = 0
   for draw_side in string.gmatch(card,"|%C+") do
-    --print(draw_side)
+    
     for num in string.gmatch(draw_side,"%d+") do
       if winning_nums[num] then
         match_counter = match_counter + 1
